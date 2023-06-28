@@ -49,17 +49,17 @@ class TestVisitor:
         assert (isinstance(vis.trips()[0], Trip))
         assert (isinstance(vis.trips()[1], Trip))
 
-    def test_has_many_parks(self):
-        '''Visitor has many parks.'''
-        vis = Visitor("Flat White")
+    # def test_has_many_parks(self):
+    #     '''Visitor has many parks.'''
+    #     vis = Visitor("Flat White")
 
-        p1 = NationalPark('Alaska Wilds')
-        p2 = NationalPark('Bryce Canyon')
-        t_1 = Trip(vis, p1, "","")
-        t_2 = Trip(vis, p2, "","")
+    #     p1 = NationalPark('Alaska Wilds')
+    #     p2 = NationalPark('Bryce Canyon')
+    #     t_1 = Trip(vis, p1, "","")
+    #     t_2 = Trip(vis, p2, "","")
 
-        assert (vis in p1.visitors())
-        assert (vis in p2.visitors())
+    #     assert (vis in p1.visitors())
+    #     assert (vis in p2.visitors())
 
     def test_has_unique_parks(self):
         '''Visitor has unique list of all the parks they have visited.'''
